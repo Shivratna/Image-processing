@@ -1,12 +1,12 @@
 # Document Detection - Transformation - Extraction basics
-
+import os
 import imutils
 import cv2
 from transform import perspective_transform
 import numpy as np
 from skimage.filters import threshold_local
 
-image = cv2.imread('/Users/Shivratna_pvt/Desktop/Projects/IP Basics/Image-processing/DAY - 2/receipt.jpg')
+image = cv2.imread('receipt.jpg')
 ratio = image.shape[0] / 500.0
 orig = image.copy()
 image = imutils.resize(image,height=500)
